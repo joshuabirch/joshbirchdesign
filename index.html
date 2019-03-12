@@ -1,238 +1,768 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Josh Birch Design</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-  <title>Josh Birch Design</title>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
-<body id="page-top">
+<body id="top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Josh Birch Design</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Portfolio</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Josh Birch Design</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Student ~ Designer ~ Developer ~ Writer ~ Researcher</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
-      </div>
-    </div>
-  </header>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">I create things and sometimes they're good</h2>
-          <p class="text-white-50">
-            I currently study applied computing @ staffordshire university while also being a junior developer at PartsWorld Group. I envisage myself working at a game studio, probably programming a monster eat people. Fun!</p>
-        </div>
-      </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
-    </div>
-  </section>
+	   		<div class="logo">
+		         <a href="index.html"></a>
+		      </div>		      
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">CV</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>					
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>AV1874</h4>
-            <p class="text-black-50 mb-0">My best product to date. An original design theme created by yours truly based on the football club I love (don't hate). Includes my first crack at implementing an API as well as the usual PHP elements.</p>
-          </div>
-        </div>
-      </div>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Buzzart Studios 2016</h4>
-                <p class="mb-0 text-white-50">My first ever website. Holy moly. It's terrible! Built in my only year at South Staffs College, using basic HTML, CSS and JS programming. <a href="#">Take a look.</a></p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   	<div class="intro-overlay"></div>	
 
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Buzzart Studios 2017</h4>
-                <p class="mb-0 text-white-50">Going into uni, I decided to give the original Buzzart Studios website a bit of spring cleaning... Includes dynamic PHP and MYSQL programming with an updated design theme... Which is really tacky.<a href="#">Take a look.</a></p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   	<div class="intro-content">
+   		<div class="row">
 
-      <!-- Project Three Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Josh Birch Graphic Package 2018</h4>
-                  <p class="mb-0 text-white-50">Graphics package for my personal social media accounts for the year 2018 (This one was boring...)</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+   			<div class="col-twelve">
 
-        <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Josh Birch Graphics Package 2019</h4>
-                  <p class="mb-0 text-white-50">Graphics package for my personal social media accounts for the year 2019 (very Vaporwave, very pastal. I like)</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Josh Birch</h1>
 
+	   			<p class="intro-position">
+	   				<span>Front-end Developer</span>
+	   				<span>UI/UX Designer</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-github"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fa fa-behance"></i></a></li>
+         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/about-img.jpg" alt="Profile Picture">
+
+   				<p class="lead">Hello! My name is Josh and I like to design and develop cool things. I love to learn and develop my skills whilst also exploring new areas of the technological industry. Check out some of my skills below!</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>A current university student studying Computing Science at Staffordshire University who is looking to begin designing and developing within the industry.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Joshua Birch</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>August 24<sup>th</sup> 1999</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Junior Web Developer</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>info@joshbirchdesign.co.uk</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>This is where I monitor and track my progress in my core skills, take a look!</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>50%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>60%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Photoshop</strong>
+					 </li>
+					 <li>
+						<div class="progress percent70"><span>70%</span></div>
+						<strong>Premiere Pro</strong>
+					</li>
+					<li>
+						<div class="progress percent40"><span>40%</span></div>
+						<strong>Illustrator</strong>
+					</li>
+					<li>
+						<div class="progress percent35"><span>35%</span></div>
+						<strong>Adobe Xd</strong>
+					</li>
+					<li>
+						<div class="progress percent85"><span>85%</span></div>
+						<strong>Google Suite</strong>
+					</li>
       
+				</ul> <!-- /skill-bars -->		
 
-    </div>
-  </section>
+   		</div>
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
+   	</div>
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Want some graphics, web designs or just a chat?</h2>
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
 
-          <form class="form-inline d-flex">
-            <button type="submit" class="btn btn-primary mx-auto">Email Me</button>
-          </form>
+   </section> <!-- /process-->    
 
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section class="contact-section bg-black">
-    <div class="container">
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
 
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="#" class="mx-2">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="#" class="mx-2">
-            <i class="fab fa-tumblr"></i>
-        </a>
-        <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-        </a>
-      </div>
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-    </div>
-  </section>
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Josh Birch Design 2019
-    </div>
-  </footer>
+   			<p class="lead">All of my work experience and relevant education is listed here. Take a look!</p>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   		</div>   		
+   	</div> <!-- /section-intro--> 
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+   	<div class="row resume-timeline">
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Junior Web Developer</h3>
+	   					<p>January 2019 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>PartsWorld Group</h4>
+	   					<p>Employing me during my studies, I joined PartsWorld in order to learn and develop industry standard practices while also continuing my studies. During my time I maintain and develop Magento(2) eCommerce stores, UI/UX designs and developing email campaigns.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   		  <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelors Degree</h3>
+	   					<p>September 2017 - 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Staffordshire University</h4>
+	   					<p>Studying web development, responsive design, UI/UX design & theory, PHP programming, database modelling, data-flow representation, data analysis, app development and cisco networking.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Level 3 Foundation Diploma</h3>
+	   					<p>September 2016 - 2017</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>South Staffs College</h4>
+	   					<p>Studying web development, graphics design & animation, business applications of social media, IT security & encryption and fundamentals and principles of computer science.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>AS Levels</h3>
+	   					<p>September 2015 - 2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Great Wyrley Sixth Form</h4>
+	   					<p>Studying Computer Science (theory with Python and Java programming), Media Studies (researching, planning and producing a piece of film) and Product Design(researching, designing and manufacturing a product).</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">Although this section is a little empty at the moment due to experience, take a look at some of the projects I have completed so far!</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/av1874.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">AV1874</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Web Development / UI&UX Design
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/buzzartstudios2.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Buzzart Studios 2017</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development / UI&UX Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/buzzartstudios1.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Buzzart Studios 2016</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/jb2018.png" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Personal Social Media Package 2018</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/jb2019.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Personal Social Media Banner 2019</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/av1874.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>AV1874</h4>		      
+					      <p>Aston Villa fan site exploring a clear design theme, API implementation and PHP elements</p>
+
+					      <div class="categories">Web Development / UI/UX Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/buzzartstudios2.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Buzzart Studioes 2017</h4>		      
+					      <p>Responsive design website which did include PHP back-end coding which was reverted due to hosting.</p>
+
+					      <div class="categories">Web Development / UI/UX Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/buzzartstudios1.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Buzzart Studioes 2016</h4>		      
+					      <p>First website ever developed exploring frameworks, responsive design and compatability.</p>
+
+					      <div class="categories">Web Development / UI/UX Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/jb2018.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Personal Social Media Package 2018</h4>		      
+					      <p>Minimalist design philosophy with Monsterrat font and clear logo.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/jb2019.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Personal Social Media Banner 2019</h4>		      
+					      <p>Exploring vaporwave design with pastal colours and abstract objects.</p>
+
+					      <div class="categories"></div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div>
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	<!-- CTA Section
+   ================================================== -->
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">These are some of the servies I can offer on a freelance basis!</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+		            
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+	            <div class="service-content">
+
+	            	<h3>Branding</h3>
+
+		             
+
+	            </div> 	            	               
+
+			   </div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>UI/UX Design</h3>
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Graphics Design</h3>
+
+		             
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Consultancy</h3>
+
+		             
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">If you want to contact me regarding any freelance services or just want a general chat then contact me here!</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+   		
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+
+   		<div class="col-six tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>info@joshbirchdesign.co.uk</p>
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>07582737362</p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         		<li><a href="#"><i class="fa fa-github"></i></a></>
+         		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         		<li><a href="#"><i class="fa fa-behance"></i></a></li>
+         		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Josh Birch 2019</span> 
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
 
